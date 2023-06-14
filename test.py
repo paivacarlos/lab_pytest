@@ -1,1 +1,0 @@
-print("Go to start this new level!")
