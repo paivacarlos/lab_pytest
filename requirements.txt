@@ -1,0 +1,8 @@
+colorama==0.4.6
+iniconfig==2.0.0
+packaging==22.0
+pluggy==1.0.0
+py==1.11.0
+pyparsing==3.0.9
+pytest==7.3.2
+tomli==2.0.1
