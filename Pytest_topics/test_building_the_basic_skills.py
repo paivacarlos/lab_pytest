@@ -1,5 +1,5 @@
-
 def test_name_is_equal():
+    print("I would like to see my print!")  # pytest -v -s / pytest -v --exitfirst
     assert 'Cardinals' == 'Cardinals'
 
 
