@@ -1,0 +1,5 @@
+city            state                   country
+Sao Leopoldo    Rio Grande do Sul       Brazil
+Porto Alegre    Rio Grande do Sul       Brazil
+Evora           Alentejo                Portugal
+Lisboa          Alentejo                Portugal
