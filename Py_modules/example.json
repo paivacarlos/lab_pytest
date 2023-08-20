@@ -1,0 +1,25 @@
+{
+  "name": "Carlos Paiva",
+  "email": "myemail@example.com",
+  "hobbies": ["NFL", "programming", "read"],
+  "salary": 2000.00,
+  "married": true,
+  "address": {
+    "country": "Brazil", "state": "RS",
+    "city": "Sao Leopoldo", "phone": "99999999999"
+  },
+  "skills": [
+    {
+      "name": "python",
+      "years": 2
+    },
+    {
+      "name": "javascript",
+      "years": 3.5
+    },
+    {
+      "name": "csharp",
+      "years": 1
+    }
+  ]
+}
