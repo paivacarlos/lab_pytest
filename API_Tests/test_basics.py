@@ -28,7 +28,6 @@ def test_get_pet_by_id():
     assert data['name'] == "doggie"
 
 
-@pytest.mark.currentTest
 def test_get_post_new_pet():
     url = base_url
     header = {'Content-Type': 'application/json'}
