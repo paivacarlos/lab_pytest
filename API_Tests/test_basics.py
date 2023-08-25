@@ -2,6 +2,7 @@ import requests, json
 
 import pytest
 
+
 base_url = "https://petstore.swagger.io/v2/pet/"
 pet_id = "8989"
 

@@ -1,8 +1,9 @@
 import pytest
 from utils.utils import get_api_return_response_data
 from utils.utils import time_limit_response_api
+from utils.env_configparser import get_pet_env_qa
 
-base_url = "https://petstore.swagger.io/v2/pet/"
+base_url = get_pet_env_qa()
 pet_id = "8989"
 
 
