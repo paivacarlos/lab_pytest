@@ -26,3 +26,15 @@ def put_api_update_data(url, body):
     data = response.json()
     time_taken = response.elapsed.total_seconds()
     return data, response.status_code, time_taken
+
+
+def delete_api_data(url, op_header=None):
+    header = {'Content-Type': 'application/json'}
+    print("Request URL: ", url)
+    send_header = (header | op_header) if isinstance(op_header, dict) else header
+    response = requests.delete(url, verify=False, headers=send_header)
+    print(response.request.headers)
+    data = response.json()
+    time_taken = response.elapsed.total_seconds()
+    return data, response.status_code, time_taken
+
