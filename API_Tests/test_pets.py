@@ -3,13 +3,20 @@ from utils.utils import get_api_return_response_data, put_api_update_data,delete
 from utils.utils import time_limit_response_api
 from utils.env_configparser import get_pet_env_qa
 
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
+
 base_url = get_pet_env_qa()
 pet_id = "8989"
 
 
+@pytest.mark.currentTest
 def test_get_by_id():
     url = base_url + pet_id
     data, resp_status, time_taken = get_api_return_response_data(url)
+    LOGGER.info("API call Done!!!")
     performance = time_limit_response_api(time_taken)
     assert data['id'] == int(pet_id)
     assert resp_status == 200
@@ -28,7 +35,6 @@ def test_update_by_id():
     assert performance is True
 
 
-@pytest.mark.currentTest
 def test_delete_by_id():
     url = base_url + pet_id
     api_key = {'api_key': 'apikeys123'}
